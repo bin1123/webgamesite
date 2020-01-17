@@ -1,0 +1,17 @@
+用户IP:127.0.0.1
+发生时间:2013-9-5 17:27:09
+发生异常页: http://localhost:2932/Pay/PTPay.aspx
+异常信息: 索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+错误源:mscorlib
+堆栈信息:   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object[] args)
+   在 Bussiness.llsgGame.GameisLogin(String sUserID, String sGameAbbre) 位置 D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Bussiness\llsgGame.cs:行号 146
+   在 Bussiness.PayAll.ValUserLoginGame(String sGameAbbre, String sUserID) 位置 D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Bussiness\PayAll.cs:行号 393
+   在 UserCenter.Pay.PTPay.Page_Load(Object sender, EventArgs e) 位置 D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\Pay\PTPay.aspx.cs:行号 30
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------

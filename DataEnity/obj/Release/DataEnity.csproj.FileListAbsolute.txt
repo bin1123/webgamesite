@@ -1,0 +1,20 @@
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataEnity\bin\Release\DataEnity.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataEnity\bin\Release\DataEnity.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\ResolveAssemblyReference.cache
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\DataEnity.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\DataEnity.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataEnity\bin\Release\DataEnity.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataEnity\bin\Release\DataEnity.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\DataEnity.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\DataEnity.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\bin\Release\DataEnity.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\bin\Release\DataEnity.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\ResolveAssemblyReference.cache
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\DataEnity.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\DataEnity.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\bin\Release\DataEnity.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\bin\Release\DataEnity.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\ResolveAssemblyReference.cache
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\DataEnity.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataEnity\obj\Release\DataEnity.pdb

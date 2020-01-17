@@ -1,0 +1,10 @@
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Debug\Common.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Debug\Common.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Debug\Common.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Debug\Common.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Debug\Common.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Debug\Common.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Debug\Common.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Debug\Common.pdb

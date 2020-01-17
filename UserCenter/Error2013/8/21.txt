@@ -1,0 +1,17 @@
+用户IP:127.0.0.1
+发生时间:2013-8-21 16:52:45
+发生异常页: http://localhost:2932/Pay/PTPay.aspx
+异常信息: 给定关键字不在字典中。
+错误源:mscorlib
+堆栈信息:   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 JSONConvert.DeserializeObject(String text) 位置 D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\JSONConvert.cs:行号 137
+   在 Bussiness.hyjftGame.GameisLogin(String sUserID, String sGameAbbre) 位置 D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Bussiness\hyjftGame.cs:行号 123
+   在 Bussiness.PayAll.ValUserLoginGame(String sGameAbbre, String sUserID) 位置 D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Bussiness\PayAll.cs:行号 384
+   在 UserCenter.Pay.PTPay.Page_Load(Object sender, EventArgs e) 位置 D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\Pay\PTPay.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------

@@ -1,0 +1,200 @@
+
+/*=========base========*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,input { font-size: 100%; margin: 0; padding: 0;}
+
+input,textarea{ font-size:12px; font-family: "宋体" ;color:#e3cdba}
+img{ border:0;}
+ul,ol{ list-style:none}
+a{ color:#4d2400; text-decoration:none;}
+a:hover{ text-decoration:underline; color:#ff9c37}
+em{ font-style:normal}
+body{  background:#fff; color:#4d2400; font:12px/1.8em "宋体"; text-align:center;}
+
+
+
+.fixfloat:after{content:".";display:block;clear:both;visibility:hidden;height:0;} 
+.clear{ clear:both}
+.fl{ float:left; display:inline}
+.fr{ float:right; display:inline}
+.font14{ font-size:14px;}
+.org,.org a{ color:#83671d;}
+.red,.red a{ color:#ff0000;}
+.red02,.red02 a{ color:#ff017f; }
+.gray,.gray a{ color:#9c9c9c;}
+.green,.green a{ color:#3cad67}
+.blue,.blue a{ color:#0096ff}
+
+.black10{ font-size:0; overflow:hidden; height:15px; width:100%; clear:both;}
+h1,h2,h3,h4,h4,h6{ font-size:12px}
+
+.header{ position:relative; width:100%; overflow:hidden; min-width:1000px;}
+.logo{ position:absolute; left:50%; top:10px; width:200px; height:100px; margin:0 0 0 -518px;}
+
+.nav{ background:url(../images/navbg.gif) no-repeat left top; width:160px; height:44px; position:absolute; left:50%; top:10px; padding:0px 0 0 4px; margin-left:-215px;}
+.nav li{ float:left; display:inline; padding:3px 12px 0 10px;}
+.nav a{ color:#ffffd6; font-size:12px; font-family:"宋体"}
+
+.bgbox{ overflow:hidden; width:100%; position:relative;}
+.bgbox img{ position:absolute; left:50%; top:0; margin:0 0 0 -980px;}
+.bg01{ height:76px;}
+.bg02{ height:80px;}
+.bg03{ height:108px;}
+.bg04{ height:84px;}
+.bg05{ height:106px;}
+.bg06{ height:300px;}
+
+
+
+.main{ background:#9f0028 url(../images/bg01.gif) no-repeat 105px 0; position:relative;width:944px; padding:18px; margin:-324px auto 0; text-align:left;  overflow:hidden;}
+.menu{ overflow:hidden; width:100%; padding-bottom:25px;}
+.menu li{ float:left;}
+.menu span{ background:url(../images/tabs.gif) no-repeat left top; float:left; display:inline;height:80px; overflow:hidden; line-height:9999px; text-indent:-9999px; cursor:pointer;}
+.menu span.a01{width:122px;background-position:0 0;}
+.menu span.a02{width:125px;background-position:-122px 0;}
+.menu span.a03{width:141px;background-position:-247px 0;}
+.menu span.a04{width:143px;background-position:-388px 0;}
+.menu span.a05{width:148px;background-position:-531px 0;}
+.menu span.a06{width:141px;background-position:-679px 0;}
+.menu span.a07{width:124px;background-position:-820px 0;}
+.menu .on span.a01{background-position:0 -90px;}
+.menu .on span.a02{background-position:-122px -90px;}
+.menu .on span.a03{background-position:-247px -90px;}
+.menu .on span.a04{background-position:-388px -90px;}
+.menu .on span.a05{background-position:-531px -90px;}
+.menu .on span.a06{background-position:-679px -90px;}
+.menu .on span.a07{background-position:-820px -90px;}
+
+.menu a:hover,.menu .on a{ background-position:0 -87px; z-index:1}
+
+.tabsconts{ background:#ffe0c4; border:2px solid #ffbc4f; padding:20px; min-height:600px; height:auto !important; height:600px;}
+h3{ height:23px; overflow:hidden; padding-bottom:10px;}
+h2{  font-family:"微软雅黑";font-size:36px; color:#cf0000; line-height:38px; height:50px; font-weight:normal; width:100%;}
+.art01{  width:100%; position:relative; height:500px; font-family:"微软雅黑"; font-size:12px;}
+.art01 .contsbox{ width:90%}
+.art01  h2{ position:relative; z-index:1}
+.logininfo{ height:60px; padding:10px 0 15px; }
+.publicbtn{ background:url(../images/btn.gif) no-repeat left top; border:none; overflow:hidden; line-height:9999px; text-indent:-9999px; cursor:pointer; display:block;}
+.btn-login{ width:185px; height:65px;}
+/*.btn-regs{ background-position:-126px 0; width:101px; height:49px;}*/
+.loginbutton{ overflow:hidden; width:100%}
+.loginbutton .publicbtn{ float:left; display:inline; margin-right:15px}
+
+.conts{ padding:0 0 0 10px;}
+.art01{ padding-left:0; font-family:"宋体"; }
+.art01 .contsbox{ width:450px;}
+.conts dl{ overflow:hidden; width:90%; padding:8px 0}
+.art01 dl{  width:100%; overflow:hidden;}
+.conts dt{ float:left; padding-bottom:5px;  color:#fe5a00; font-family:"微软雅黑"; font-size:14px; font-weight:bold;}
+.conts  dd{ margin-left:90px; zoom:1; }
+.conts .dl_no dt{ float:none;}
+.conts .dl_no dd{ margin:0 0 0 5px;  }
+.art01 .contsbox ol{ list-style:outside; list-style-type: decimal; padding-left:23px; font-weight:bold;line-height:1.8em;}
+.art01 .contsbox li span{ font-weight:normal;}
+table{ background:#9f0028; border:4px solid #9f0028;  text-align:center; margin-bottom:10px;}
+tr{ background-color:#ffe0c4;}
+th{ background-color:#e58228; color:#550a1d; font-family:"微软雅黑";  font-size:15px; padding:7px 8px;}
+td{ padding:5px 8px;}
+.td_2{ width:80px;}
+.tablebox{ overflow:hidden; width:100%}
+
+.conts .btm{ padding:10px 0 0 5px;}
+
+.libaobox{ background:url(../images/lbbg.jpg) no-repeat left top; width:428px; height:418px; position:absolute; right:10px; top:20px;}
+
+.item{ position: absolute;width:96px; height:86px; z-index:22}
+.item01{ left:160px; top:40px}
+.item02{ left:60px; top:85px}
+.item03{ right:70px; top:92px}
+.item04{ left:45px; top:180px}
+.item05{ left:110px; top:280px}
+.item06{ left:210px; top:280px}
+.item07{ right:50px; top:190px}
+
+.item ul{ background:url(../images/bg.png) repeat left top; _background:#fff; display:none; font:12px/1.5em "宋体"; width:160px; padding:5px 8px; position:absolute;top:0}
+.item01 ul{ left:80px; }
+.item02 ul{ left:-155px;}
+.item03 ul{ left:35px; top:-40px}
+.item04 ul{ left:-160px;}
+.item05 ul{ left:-155px;}
+.item06 ul{ left:70px; top:20px}
+.item07 ul{ left:0px; top:55px }
+.item-hover ul{ display:block;}
+.item .a-tit{ width:96px; height:80px; display:block; cursor:pointer}
+.item .a-tit span{ display:none}
+
+.conts .pic{ padding-top:8px}
+
+.flashbox{ padding:13px 0 0 17px}
+.flash-cg{ position:absolute; left:0; top:0}
+
+.flash-btn{ position:absolute; z-index:999; width:95px; height:95px; left:161px; top:161px;}
+.flash-btn .publicbtn{ background: url(../images/xz.gif) no-repeat -300px top; width:95px; height:95px; }
+.flash-btn .publicbtn:hover{ background-position:0 0;}
+
+.loginon{ font-weight:bold;font-size:14px;}
+.fw-n{ font-weight:normal;}
+.loginon .btm{ padding:10px 0 0 }
+
+/*弹出层*/
+
+/* Interaction Cues
+----------------------------------*/
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-widget-overlay { background: #000 ; opacity: .7;filter:Alpha(Opacity=70)/*{opacityOverlay}*/; }
+
+/*---------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+
+
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+.ui-state-disabled { cursor: default !important; }
+
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Dialog----------------------------------*/
+
+.ui-dialog { position: relative;}
+.ui-dialog .ui-dialog-titlebar { position: relative;    z-index:9999;}
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 0 .2em; display:none} 
+.ui-dialog .ui-dialog-titlebar-close {  position: absolute;   right:10px;  top: 8px;  width: 22px;}
+.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; border:0; background:none; }
+.ui-dialog .ui-dialog-content { border: 0; /*padding: .5em 1em; background: none; overflow: auto;*/ zoom: 1; }
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane button { float: right; margin: .5em .4em .5em 0; cursor: pointer; padding: .2em .6em .3em .6em; line-height: 1.4em; width:auto; overflow:visible; }
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+.ui-dialog-titlebar .ui-dialog-titlebar-close{ background:none;  width:31px;  height:34px;   border:0;}
+.ui-dialog-titlebar .ui-dialog-titlebar-close .ui-icon-closethick{  background: url(../images/close.gif) no-repeat left top;   width:31px;   height:34px;}
+.pop-div{ background:url(../images/popbg.gif) no-repeat left top; width:380px; height:260px; text-align:left; font-size:12px; font-family:"宋体"}
+.btn-submit{ background-position:0 -64px; width:143px; height:37px}
+.btn-poplogin{background-position:0 -112px; width:143px; height:37px}
+
+.pop-div h2{ text-align:center; height:50px; overflow:hidden; padding-top:5px}
+.pop-conts ul{ overflow:hidden; width:100%; line-height:25px;}
+.pop-conts li{ float:left; width:100%; padding:10px 0 0;}
+.pop-conts li label{ width:115px;  text-align:right; height:35px; overflow:hidden }
+.pop-conts li label img{ float:right; padding-top:3px; vertical-align:top}
+.pop-conts .inputbox{ float:right; display:block; width:255px; color:#ff0000; }
+.pop-conts .inputbg{color:#ff0000}
+.textsty{ background:#e3c2a4; width:185px; height:25px; padding:0 0 0 5px; border: none; color:#bb3153}
+.pop-conts .tip{ position: absolute; line-height:1.0em; margin-left:-80px; width:330px; text-align:center}
+.pop-div .button{padding:8px 0 0 117px}
+
+#dialog_jiangpin .pop-conts{ padding:0 40px;}
+.poplist{ padding:10px 0 0; font-size:14px; font-family:"微软雅黑"; line-height:1.8em;}
+
+.pop-conts .lod{ padding:65px 0 0; text-align: center;}

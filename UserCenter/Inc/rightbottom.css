@@ -1,0 +1,193 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0;}
+a{ font-size:12px; font-weight:normal; color:#333333; text-decoration:none}
+a img{ border:none}
+em{ font-style:normal}
+li{ list-style:none}
+.jdtj{ width:216px; float:right; position:absolute; right:0; bottom:0;}
+.jdtj_a, .jdtj_a_on {
+    float: right;
+    width: 216px;
+}
+.jdtj_box {
+    background:url(../images/jdtj.png) no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font: bold 14px/31px "微软雅黑";
+    height: 31px;
+    overflow: hidden;
+    padding-left: 30px;
+    position: relative;
+    width: 186px;
+    z-index: 9999;
+}
+.jdtj_box a {
+    background: url(../images/jdtj.png) no-repeat scroll 0 -281px transparent;
+    float: right;
+    height: 11px;
+    margin: 10px 10px 0 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    z-index: 9999;
+}
+.jdtj_img_list {
+    background-color: #FFFFFF;
+    border-top: 1px solid #9E9E9E;
+    overflow: hidden;
+    padding: 10px 10px 0;
+}
+.jdtj_img_list li {
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    width: 194px;
+}
+.jdtj_img_list li .jdtj_imgtxt .jdtj_img {
+    background: url(../images/jdtj.png) no-repeat scroll 0 -92px transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 80px;
+    padding: 4px 1px;
+    width: 192px;
+}
+.jdtj_img_list li .jdtj_imgtxt:hover .jdtj_img {
+    background: url(../images/jdtj.png) no-repeat scroll 0 -188px transparent;
+    text-decoration: none;
+}
+.jdtj_img_list li .jdtj_imgtxt em {
+    cursor: pointer;
+    float: left;
+    height: 24px;
+    overflow: hidden;
+    width: 194px;
+}
+.jdtj_img_list li .jdtj_imgtxt:hover em {
+    text-decoration: underline;
+}
+.jdtj_link, .jdtj_tit_box, .jdtj_img_list, .jdtj_txt_box, .jdtj_gdkf {
+    border-left: 1px solid #9E9E9E;
+    border-right: 1px solid #9E9E9E;
+    float: left;
+    overflow: hidden;
+}
+.jdtj_link {
+    background-color: #FFFFFF;
+    height: 1px;
+    width: 214px;
+}
+.jdtj_link span {
+    background-color: #D6D6D6;
+    display: inline;
+    float: left;
+    height: 1px;
+    margin-left: 1px;
+    overflow: hidden;
+    width: 212px;
+}
+.jdtj_tit_box {
+    background-color: #666666;
+    line-height: 30px;
+    position: relative;
+    width: 214px;
+    z-index: 1;
+}
+.jdtj_tit_box em {
+    color: #FFFFFF;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    margin-left: 14px;
+}
+.jdtj_tit_box .jdtj_zhangkai, .jdtj_tit_box .jdtj_shouqi {
+    color: #FFFFFF;
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    width: 35px;
+    z-index: 9999;
+}
+.jdtj_tit_box .jdtj_zhangkai b, .jdtj_tit_box .jdtj_shouqi b {
+    cursor: pointer;
+    float: right;
+    height: 9px;
+    margin: 8px 0 0 5px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    z-index: 9999;
+}
+.jdtj_tit_box .jdtj_zhangkai b {
+    background: url(../images/jdtj.png) no-repeat scroll 0 -44px transparent;
+}
+.jdtj_tit_box .jdtj_shouqi b {
+    background: url(../images/jdtj.png) no-repeat scroll 0 -57px transparent;
+}
+.jdtj_txt_box {
+    background-color: #FFFFFF;
+    padding: 0 1px;
+    width: 212px;
+}
+.jdtj_txt_box .jdtj_txt_list {
+    background-color: #EBEBEB;
+    padding: 5px 10px;
+}
+.jdtj_txt_list li, .jdtj_txt_list1 li {
+    border-bottom: 1px dashed #CCCCCC;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.jdtj_txt_list li em, .jdtj_txt_list li a, .jdtj_txt_list li .jdtj_wenzi, .jdtj_txt_list1 li em, .jdtj_txt_list1 li a, .jdtj_txt_list1 li .jdtj_wenzi {
+    height: 24px;
+    overflow: hidden;
+}
+.jdtj_txt_list li em, .jdtj_txt_list1 li em {
+    float: left;
+    margin-right: 5px;
+    width: 32px;
+}
+.jdtj_txt_list li a, .jdtj_txt_list1 li a {
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+    width: 90px;
+}
+.jdtj_txt_list li .jdtj_wenzi, .jdtj_txt_list1 li .jdtj_wenzi {
+    color: #999999;
+    float: none;
+    margin-right: 0;
+    text-align: center;
+    width: 60px;
+}
+.jdtj_txt_list li .jdtj_wenzi:hover, .jdtj_txt_list1 li .jdtj_wenzi:hover {
+    color: #FF6600;
+}
+.jdtj_bottom {
+    background: url(../images/jdtj.png) no-repeat scroll 0 -80px transparent;
+    float: left;
+    height: 5px;
+    overflow: hidden;
+    width: 216px;
+}
+.jdtj_gdkf {
+    background-color: #EBEBEB;
+    border-top: 1px solid #D6D6D6;
+    display: block;
+    float: left;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 214px;
+}
+.jdtj_dq {
+    color: #FF0000; font-size:12px;
+}
+.jdtj_txt_box .jdtj_txt111 {
+    padding: 8px 10px;
+}

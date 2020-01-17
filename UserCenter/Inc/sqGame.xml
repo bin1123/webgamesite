@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  
+  <serverRange min="1" max="94" zhu="1"/>
+  <serverRange min="95" max="184" zhu="100"/>
+  <serverRange min="185" max="225" zhu="185"/>
+  <serverRange min="226" max="255" zhu="226"/>
+  <serverRange min="256" max="291" zhu="256"/>
+  <serverRange min="292" max="310" zhu="292"/>
+  <serverRange min="311" max="320" zhu="311"/>
+  <serverRange min="321" max="324" zhu="321"/>
+  <serverRange min="325" max="332" zhu="325"/>
+  <serverRange min="333" max="340" zhu="333"/>
+  <serverRange min="341" max="344" zhu="341"/>
+  <serverRange min="345" max="349" zhu="345"/>
+  <serverRange min="350" max="354" zhu="350"/>
+  <serverRange min="355" max="359" zhu="355"/>
+</config>

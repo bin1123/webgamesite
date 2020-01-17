@@ -1,0 +1,134 @@
+用户IP:127.0.0.1
+发生时间:2014-3-7 09:10:43
+发生异常页: http://localhost:2838/favicon.ico
+异常信息: 文件不存在。
+错误源:System.Web
+堆栈信息:   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-7 09:10:43
+发生异常页: http://localhost:2838/favicon.ico
+异常信息: 文件不存在。
+错误源:System.Web
+堆栈信息:   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-7 09:20:18
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-7 09:20:55
+发生异常页: http://localhost:2838/GCenter/togame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-7 09:21:03
+发生异常页: http://localhost:2838/GCenter/togame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-7 09:21:11
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-7 09:22:32
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-7 09:22:59
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-7 17:01:49
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 索引和长度必须引用该字符串内的位置。
+参数名: length
+错误源:mscorlib
+堆栈信息:   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 Bussiness.jyGame.GetSite(String serverid) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Bussiness\jyGame.cs:行号 146
+   在 Bussiness.jyGame.Login(String sUserID, String sGame, String sClient) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Bussiness\jyGame.cs:行号 15
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 163
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-7 17:03:05
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 索引和长度必须引用该字符串内的位置。
+参数名: length
+错误源:mscorlib
+堆栈信息:   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 Bussiness.jyGame.GetSite(String serverid) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Bussiness\jyGame.cs:行号 146
+   在 Bussiness.jyGame.Login(String sUserID, String sGame, String sClient) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Bussiness\jyGame.cs:行号 15
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 163
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------

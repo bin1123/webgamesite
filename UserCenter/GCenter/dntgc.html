@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="http://file.dao50.com/dntgcl/css/main.css" rel="stylesheet" type="text/css" />
+	<title>dao50_大闹天宫微端</title>
+</head>
+<body>
+<form id="form1" action="dntgcl.aspx" method="post" onsubmit="return submit_form()">
+	<div class="dntg_dl">
+	  <div class="toplist">
+	    <a class="link_btn_1" href="http://www.dao50.com/news/dntg_yxzl/" target="_blank" title="游戏资料">游戏资料</a>
+        <a class="link_btn_2" href="http://www.dao50.com/news/dntg_yxgg/" target="_blank" title="新闻中心">新闻中心</a>
+		<a class="link_btn_3" href="http://www.dao50.com/yxzq/dntg/" target="_blank" title="官网首页">官网首页</a>
+		<a class="link_btn_4" href="http://www.dao50.com/news/dntg_yxhd/" target="_blank" title="活动公告">活动公告</a>
+        <a class="link_btn_5" href="http://bbs.dao50.com/showforum-191.aspx" target="_blank" title="游戏论坛">游戏论坛</a>
+	  </div>
+	  <div class="dntg_bot">
+    	<div class="login_c">
+				<p class="id"><label >账号：</label><input name="username" type="text" class="input1" id="username"/></p>
+				<p class="pass"><label>密　码：</label><input name="pwd" type="password" class="input1" id="pwd" /></p>
+				<p class="remb"></p><!--记住我-->
+			</div>
+	    <div class="login_r">
+				<a href="#" class="zcan" onclick="submit_form();return false;"></a><!--开始游戏按钮-->
+				<a href="/UCenter/reg.aspx" class="btn" target="_blank"></a><!--注册号码按钮-->
+			</div>
+      </div>
+    </div>
+</form>
+</body>
+</html>
+<script type="text/javascript" src="/JsFolder/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+    function submit_form() {
+        var username = $("#username").val();
+        var password = $("#pwd").val();
+        if (username == "") {
+            alert("请输入用户名");
+        }
+        else if (username.length < 4 || username.length > 16) {
+            alert("用户名格式不正确!");
+        }
+        else if (password == "") {
+            alert("密码不能为空");
+        }
+        else if (password.length < 6 || password.length > 16) {
+            alert("密码格式不正确!");
+        }
+        else {
+            document.getElementById("form1").submit();
+        }
+    }
+</script>

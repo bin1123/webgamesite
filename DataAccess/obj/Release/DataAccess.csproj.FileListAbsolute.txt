@@ -1,0 +1,34 @@
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataAccess.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataAccess.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataEnity.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataEnity.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\ResolveAssemblyReference.cache
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\DataAccess.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\DataAccess.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataAccess.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataAccess.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataEnity.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataEnity.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\DataAccess.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\DataAccess.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataAccess.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataAccess.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataEnity.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataEnity.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\ResolveAssemblyReference.cache
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\DataAccess.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\DataAccess.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataAccess.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataAccess.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataEnity.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\bin\Release\DataEnity.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\ResolveAssemblyReference.cache
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\DataAccess.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\DataAccess\obj\Release\DataAccess.pdb

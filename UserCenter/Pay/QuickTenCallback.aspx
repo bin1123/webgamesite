@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="QuickTenCallback.aspx.cs" Inherits="UserCenter.Pay.QuickTenCallback" %>

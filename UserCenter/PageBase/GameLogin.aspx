@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GameLogin.aspx.cs" Inherits="UserCenter.PageBase.GameLogin" %>

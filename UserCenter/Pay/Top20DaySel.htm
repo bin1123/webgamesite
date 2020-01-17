@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title></title>
+    <script type="text/javascript" src="/JsFolder/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.ajax({
+                type: "POST",
+                url: "/Services/Ajax.ashx",
+                data: "AjaxType=Top20PayAllSel",
+                beforeSend: function() {
+                },
+                success: function(data) {
+                    if (data.length > 8) {
+                        var dataObj = eval("(" + data + ")");
+                        if (dataObj.root.length > 0) {
+                            $.each(dataObj.root, function(idx, item) {
+                                $("#DayPayInfo").append("<p>" + item.num + ".充值账号： &nbsp;&nbsp;" + item.account + "；充值金额：&nbsp;&nbsp;" + item.price + "</p>");
+                                if (idx == 0) { return true; }
+                            })
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<h3>昨日充值排行</h3>
+<div id="DayPayInfo">                
+</div>
+</body>
+</html>

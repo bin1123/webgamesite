@@ -1,0 +1,20 @@
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Release\Common.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Release\Common.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\ResolveAssemblyReference.cache
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\Common.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\Common.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Release\Common.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Release\Common.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\Common.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\Common.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Release\Common.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Release\Common.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\ResolveAssemblyReference.cache
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\Common.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\Common.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Release\Common.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\Common\bin\Release\Common.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\ResolveAssemblyReference.cache
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\Common.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\Common\obj\Release\Common.pdb

@@ -1,0 +1,163 @@
+用户IP:127.0.0.1
+发生时间:2014-3-6 17:50:20
+发生异常页: http://localhost:2838/favicon.ico
+异常信息: 文件不存在。
+错误源:System.Web
+堆栈信息:   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 17:58:31
+发生异常页: http://localhost:2838/frame/g_mainframe_jy.aspx?gn=jy1
+异常信息: 文件“/frame/g_mainframe_jy.aspx”不存在。
+错误源:System.Web
+堆栈信息:   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 17:59:29
+发生异常页: http://localhost:2838/frame/g_mainframe_jy.aspx?gn=jy1
+异常信息: 文件“/frame/g_mainframe_jy.aspx”不存在。
+错误源:System.Web
+堆栈信息:   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 18:01:44
+发生异常页: http://localhost:2838/frame/g_mainframe_jy.aspx?gn=jy1
+异常信息: 文件“/frame/g_mainframe_jy.aspx”不存在。
+错误源:System.Web
+堆栈信息:   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 18:11:46
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 将截断字符串或二进制数据。
+语句已终止。
+错误源:.Net SqlClient Data Provider
+堆栈信息:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command)
+   在 Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   在 DataAccess.GameLoginDAL.GameLoginAdd(GameLogin glObject) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\DataAccess\GameLoginDAL.cs:行号 24
+   在 Bussiness.GameLoginBLL.GameLoginAdd(Int32 iUserID, String sGameName, String sLoginIP, String sLoginUrl) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\Bussiness\GameLoginBLL.cs:行号 21
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 173
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 18:14:34
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 18:20:03
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 18:21:04
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 18:23:10
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 18:25:03
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:127.0.0.1
+发生时间:2014-3-6 18:26:09
+发生异常页: http://localhost:2838/GCenter/ToGame.aspx?gn=jy1
+异常信息: 重定向 URI 不能包含换行符。
+错误源:System.Web
+堆栈信息:   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 UserCenter.GCenter.ToGame.Page_Load(Object sender, EventArgs e) 位置 D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\GCenter\ToGame.aspx.cs:行号 175
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------

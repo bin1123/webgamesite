@@ -1,0 +1,78 @@
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\UserCenter.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\UserCenter.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Bussiness.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Common.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataEnity.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\com.yeepay.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataAccess.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\tenpayLib.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Bussiness.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Common.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataEnity.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataAccess.pdb
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\ResolveAssemblyReference.cache
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\UserCenter.dll
+D:\应用\work\news\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\UserCenter.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\UserCenter.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\UserCenter.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Bussiness.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Common.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataEnity.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\com.yeepay.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\tenpayLib.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataAccess.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.ObjectBuilder.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Bussiness.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Common.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataEnity.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataAccess.pdb
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\UserCenter.dll
+C:\Documents and Settings\Administrator\桌面\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\UserCenter.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\UserCenter.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\UserCenter.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Bussiness.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Common.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataEnity.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\tenpayLib.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\com.yeepay.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataAccess.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Common.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataEnity.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Bussiness.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataAccess.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\ResolveAssemblyReference.cache
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\UserCenter.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\UserCenter.pdb
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\icsharpcode.sharpziplib.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\log4net.dll
+D:\WorkFile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Memcached.ClientLibrary.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\UserCenter.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\UserCenter.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Bussiness.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Common.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataEnity.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\icsharpcode.sharpziplib.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\log4net.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Memcached.ClientLibrary.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\tenpayLib.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.ObjectBuilder.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\com.yeepay.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataAccess.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Common.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataEnity.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\Bussiness.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\bin\DataAccess.pdb
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\ResolveAssemblyReference.cache
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\UserCenter.dll
+F:\workfile\game.dao50.com\UserCenter.root\UserCenter\UserCenter\obj\Release\UserCenter.pdb

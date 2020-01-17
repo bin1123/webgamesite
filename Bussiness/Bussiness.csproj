@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BD185BB-0F1A-43CE-9C41-CDA9150C4F86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bussiness</RootNamespace>
+    <AssemblyName>Bussiness</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="com.yeepay, Version=1.0.3219.25878, Culture=neutral, PublicKeyToken=a5166d3256541220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\binfile\com.yeepay.dll</HintPath>
+    </Reference>
+    <Reference Include="com.yeepay.bank, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\binfile\com.yeepay.bank.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="tenpayLib, Version=1.0.3828.24050, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\binfile\tenpayLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AliPay.cs" />
+    <Compile Include="AlipayConfig.cs" />
+    <Compile Include="AlipayCore.cs" />
+    <Compile Include="AlipayNotify.cs" />
+    <Compile Include="AlipayService.cs" />
+    <Compile Include="AlipaySubmit.cs" />
+    <Compile Include="ChannelBLL.cs" />
+    <Compile Include="checkcode.cs" />
+    <Compile Include="CodeBLL.cs" />
+    <Compile Include="CodeHBLL.cs" />
+    <Compile Include="DiscuzUserI.cs" />
+    <Compile Include="djjGame.cs" />
+    <Compile Include="GameBLL.cs" />
+    <Compile Include="GameCodeBLL.cs" />
+    <Compile Include="GameInfoBLL.cs" />
+    <Compile Include="GameLoginBLL.cs" />
+    <Compile Include="jjpGame.cs" />
+    <Compile Include="jyGame.cs" />
+    <Compile Include="mhtjGame.cs" />
+    <Compile Include="NoticeBLL.cs" />
+    <Compile Include="FirstGiftBLL.cs" />
+    <Compile Include="PartnerBLL.cs" />
+    <Compile Include="PartnerUserBLL.cs" />
+    <Compile Include="PayAll.cs" />
+    <Compile Include="PInfoSendToU.cs" />
+    <Compile Include="QQLogin.cs" />
+    <Compile Include="ServerBLL.cs" />
+    <Compile Include="sskcGame.cs" />
+    <Compile Include="sssgGame.cs" />
+    <Compile Include="SzfPayBuy.cs" />
+    <Compile Include="TranQuickBLL.cs" />
+    <Compile Include="TransPBLL.cs" />
+    <Compile Include="UserBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfoBLL.cs" />
+    <Compile Include="TransGBLL.cs" />
+    <Compile Include="UserMoreBLL.cs" />
+    <Compile Include="UserPointsBLL.cs" />
+    <Compile Include="VPayBuy.cs" />
+    <Compile Include="YeePayBuy.cs" />
+    <Compile Include="GamePayBLL.cs" />
+    <Compile Include="FirstOfPayPointBLL.cs" />
+    <Compile Include="LastOfPayPointBLL.cs" />
+    <Compile Include="CenterLoginBLL.cs" />
+    <Compile Include="sxdGame.cs" />
+    <Compile Include="TenPayBuy.cs" />
+    <Compile Include="ljGame.cs" />
+    <Compile Include="sqGame.cs" />
+    <Compile Include="dxzGame.cs" />
+    <Compile Include="PWDUpdateBLL.cs" />
+    <Compile Include="QdbPayBuy.cs" />
+    <Compile Include="txjGame.cs" />
+    <Compile Include="sjsgGame.cs" />
+    <Compile Include="tzcqGame.cs" />
+    <Compile Include="byGame.cs" />
+    <Compile Include="NoRegLoginBLL.cs" />
+    <Compile Include="NoRegGiftBLL.cs" />
+    <Compile Include="GamePaySucBLL.cs" />
+    <Compile Include="swjtGame.cs" />
+    <Compile Include="gcldGame.cs" />
+    <Compile Include="khbdGame.cs" />
+    <Compile Include="hyjftGame.cs" />
+    <Compile Include="nslmGame.cs" />
+    <Compile Include="yjxyGame.cs" />
+    <Compile Include="tgztGame.cs" />
+    <Compile Include="mhxyGame.cs" />
+    <Compile Include="qxzGame.cs" />
+    <Compile Include="qszgGame.cs" />
+    <Compile Include="wwsgGame.cs" />
+    <Compile Include="QQUserBLL.cs" />
+    <Compile Include="dntgGame.cs" />
+    <Compile Include="RNameAutoBLL.cs" />
+    <Compile Include="YRTPayBLL.cs" />
+    <Compile Include="ktpdGame.cs" />
+    <Compile Include="sgyjzGame.cs" />
+    <Compile Include="tgzt2Game.cs" />
+    <Compile Include="zwxGame.cs" />
+    <Compile Include="CenterLoginTodayBLL.cs" />
+    <Compile Include="GameLoginTodayBLL.cs" />
+    <Compile Include="qfzGame.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{00DCD68C-7893-4D29-8B11-6E3B87DB9557}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{EC9334DA-2A3E-4742-8EC6-2A3630C68798}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEnity\DataEnity.csproj">
+      <Project>{150D9C34-1B28-4507-870A-5966F67AC7D0}</Project>
+      <Name>DataEnity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="剑影,剑影官网,剑影网页游戏,剑影攻略" />
+<meta name="Description" content="剑影是一款即时战斗的角色扮演类网页游戏，游戏主要以封神为主线展开，主打双核心玩法。除秉承传统ARPG优秀玩法（即时玩法）之外,系统另外增加了一套离线玩法，规则简单易上手，但玩法不失研究性和可变性。" />
+<title>剑影_剑影登录器_到武林剑影登录器</title>
+<link rel="stylesheet" href="http://file.dao50.com/jycl/css/client.css" type="text/css" />
+</head>
+<body>
+
+<div class="main">
+    <div class="login">
+        <div class="news">
+            <ul>
+                    <li class="hot" >
+                        <a href="http://www.dao50.com/hd/jy/xfhd/" target="_blank">
+                            <!--· -->[新闻] 《剑影》开服七日活动
+                        </a>
+                    </li>
+                    <li  >
+                        <a href="http://www.dao50.com/hd/jy/yblh/" target="_blank">
+                            <!--· -->[粉贴] 《剑影》1.1版本内容 
+                        </a>
+                    </li>
+                    <li  >
+                        <a href="http://www.dao50.com/news/jy_yxzl/index.html" target="_blank">
+                            <!--· -->[新闻] 《剑影》游戏资料 
+                        </a>
+                    </li>
+                    <li  >
+                        <a href="http://www.dao50.com/news/jy_yxhd/index.html" target="_blank">
+                            <!--· -->[新闻] 《剑影》最新活动
+                        </a>
+                    </li>
+                    <li  >
+                        <a href="http://www.dao50.com/news/jy_yxgg/index.html" target="_blank">
+                            <!--· -->[新闻] 《剑影》最新开服动态 
+                        </a>
+                    </li>
+            </ul>
+        </div>
+        <form id="form1" action="jycl.aspx" method="post" onsubmit="return submit_form()">
+        <div class="login-area">
+            <div class="line1">
+                <input  name="username" type="text" class="login-input" id="login-username" />
+                <div class="login-msg" id="login-username-text">请输入帐号</div>
+            </div>
+            <div class="line1">
+                <input  name="pwd"  type="password"  class="login-input" id="login-password" />
+                <div class="login-msg" id="login-password-text">请输入密码</div>
+            </div>
+            <div class="line2">
+                <a href="javascript:;" id="remember-wrap" class="true"></a>
+                <input type="hidden" id="remember" value="true" />
+                <a href="/UCenter/searchPass.aspx" class="go-reg"  target="_blank">注册帐号</a>
+                <a href="/UCenter/reg.aspx" class="find-password" target="_blank">找回密码</a>
+            </div>
+            <input type="submit" id="login-btn"  value=""/>
+            <!-- <a href="javascript:;" id="login-btn"></a>--><!--登录按钮-->
+        </div>
+        </form>
+    </div> 
+</div>
+
+<script type="text/javascript" src="/JsFolder/jquery-1.4.2.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery-1.7.1.js"></script>-->
+<script type="text/javascript" src="http://file.dao50.com/jycl/js/client1.js?ver=1389854743462"></script>
+<script type="text/javascript">
+    function submit_form() {
+        var username = $("#login-username").val();
+        var password = $("#login-password").val();
+        if (username == "") {
+            alert("请输入用户名");
+            return false;
+        }
+        else if (username.length < 4 || username.length > 16) {
+        alert("用户名格式不正确!");
+        return false;
+        }
+        else if (password == "") {
+        alert("密码不能为空");
+        return false;
+        }
+        else if (password.length < 6 || password.length > 16) {
+        alert("密码格式不正确!");
+        return false;
+        }
+        else {
+            return true;
+        }
+    }
+</script>
+
+</body>
+</html>

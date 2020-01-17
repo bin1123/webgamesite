@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MulitToGame.aspx.cs" Inherits="UserCenter.GCenter.MulitToGame" %>

@@ -1,0 +1,1468 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DEC57BFB-71CC-4FD8-B9D6-297698F8BED1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UserCenter</RootNamespace>
+    <AssemblyName>UserCenter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="icsharpcode.sharpziplib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\exe\icsharpcode.sharpziplib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\exe\log4net-1.2.10\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\exe\Memcached.ClientLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GCenter\PlayGame.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="JsFolder\CookieF.js" />
+    <Content Include="JsFolder\Game.js" />
+    <Content Include="JsFolder\jquery-1.4.2.min.js" />
+    <Content Include="JsFolder\md5.js" />
+    <Content Include="JsFolder\shenfen.js" />
+    <Content Include="JsFolder\Tran.js" />
+    <Content Include="JsFolder\UserVal.js" />
+    <Content Include="Pay\images\01.jpg" />
+    <Content Include="Pay\images\02.jpg" />
+    <Content Include="Pay\images\03.jpg" />
+    <Content Include="Pay\images\04.jpg" />
+    <Content Include="Pay\images\05.jpg" />
+    <Content Include="Pay\images\06.jpg" />
+    <Content Include="Pay\images\07.jpg" />
+    <Content Include="Pay\images\08.jpg" />
+    <Content Include="Pay\images\09.jpg" />
+    <Content Include="Pay\images\10.jpg" />
+    <Content Include="Pay\images\guangfa.gif" />
+    <Content Include="Pay\images\huaxia.gif" />
+    <Content Include="Pay\images\youzheng.gif" />
+    <Content Include="Pay\images\zhongguo.gif" />
+    <Content Include="Pay\images\zhongxin.gif" />
+    <Content Include="Pay\PayAli_Notify.aspx" />
+    <Content Include="Pay\PayAli_Return.aspx" />
+    <Content Include="Pay\PayGErr.aspx" />
+    <Content Include="Pay\PayGSucc.aspx" />
+    <Content Include="Pay\PayPErr.aspx" />
+    <Content Include="Pay\PayPSucc.aspx" />
+    <Content Include="Pay\YeeCallBack.aspx" />
+    <Content Include="Services\Ajax.aspx" />
+    <Content Include="Services\CenterUserI.aspx" />
+    <Content Include="Services\UserLoginW.aspx" />
+    <Content Include="UCenter\reg.aspx" />
+    <Content Include="UCenter\searchPass.aspx" />
+    <Content Include="UCenter\updatePass.aspx" />
+    <Content Include="UCenter\UPWordM.aspx" />
+    <Content Include="UCenter\TransSel.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\BaseConfig.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_l.aspx.cs">
+      <DependentUpon>g_left_nav_l.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_l.aspx.designer.cs">
+      <DependentUpon>g_left_nav_l.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_jy.aspx.cs">
+      <DependentUpon>g_mainframe_jy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_jy.aspx.designer.cs">
+      <DependentUpon>g_mainframe_jy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ktpd.aspx.cs">
+      <DependentUpon>g_mainframe_ktpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ktpd.aspx.designer.cs">
+      <DependentUpon>g_mainframe_ktpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_l.aspx.cs">
+      <DependentUpon>g_mainframe_l.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_l.aspx.designer.cs">
+      <DependentUpon>g_mainframe_l.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_mhtj.aspx.cs">
+      <DependentUpon>g_mainframe_mhtj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_mhtj.aspx.designer.cs">
+      <DependentUpon>g_mainframe_mhtj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sskc.aspx.cs">
+      <DependentUpon>g_mainframe_sskc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sskc.aspx.designer.cs">
+      <DependentUpon>g_mainframe_sskc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_top_nav_l.aspx.cs">
+      <DependentUpon>g_top_nav_l.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_top_nav_l.aspx.designer.cs">
+      <DependentUpon>g_top_nav_l.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\scroller.aspx.cs">
+      <DependentUpon>scroller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\scroller.aspx.designer.cs">
+      <DependentUpon>scroller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_lj.aspx.cs">
+      <DependentUpon>g_mainframe_lj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_lj.aspx.designer.cs">
+      <DependentUpon>g_mainframe_lj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_yjxy.aspx.cs">
+      <DependentUpon>g_mainframe_yjxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_yjxy.aspx.designer.cs">
+      <DependentUpon>g_mainframe_yjxy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_yjxy.aspx.cs">
+      <DependentUpon>g_left_nav_yjxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_yjxy.aspx.designer.cs">
+      <DependentUpon>g_left_nav_yjxy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_tssg.aspx.cs">
+      <DependentUpon>g_left_nav_tssg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_tssg.aspx.designer.cs">
+      <DependentUpon>g_left_nav_tssg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_tssg.aspx.cs">
+      <DependentUpon>g_mainframe_tssg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_tssg.aspx.designer.cs">
+      <DependentUpon>g_mainframe_tssg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_mjcs.aspx.cs">
+      <DependentUpon>g_left_nav_mjcs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_mjcs.aspx.designer.cs">
+      <DependentUpon>g_left_nav_mjcs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_mjcs.aspx.cs">
+      <DependentUpon>g_mainframe_mjcs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_mjcs.aspx.designer.cs">
+      <DependentUpon>g_mainframe_mjcs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_sq.aspx.cs">
+      <DependentUpon>g_left_nav_sq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_sq.aspx.designer.cs">
+      <DependentUpon>g_left_nav_sq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sq.aspx.cs">
+      <DependentUpon>g_mainframe_sq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sq.aspx.designer.cs">
+      <DependentUpon>g_mainframe_sq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_hzw.aspx.cs">
+      <DependentUpon>g_left_nav_hzw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_hzw.aspx.designer.cs">
+      <DependentUpon>g_left_nav_hzw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_hzw.aspx.cs">
+      <DependentUpon>g_mainframe_hzw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_hzw.aspx.designer.cs">
+      <DependentUpon>g_mainframe_hzw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_xlfc.aspx.cs">
+      <DependentUpon>g_left_nav_xlfc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_xlfc.aspx.designer.cs">
+      <DependentUpon>g_left_nav_xlfc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_xlfc.aspx.cs">
+      <DependentUpon>g_mainframe_xlfc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_xlfc.aspx.designer.cs">
+      <DependentUpon>g_mainframe_xlfc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_dxz.aspx.cs">
+      <DependentUpon>g_left_nav_dxz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_dxz.aspx.designer.cs">
+      <DependentUpon>g_left_nav_dxz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_dxz.aspx.cs">
+      <DependentUpon>g_mainframe_dxz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_dxz.aspx.designer.cs">
+      <DependentUpon>g_mainframe_dxz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_djj.aspx.cs">
+      <DependentUpon>g_mainframe_djj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_djj.aspx.designer.cs">
+      <DependentUpon>g_mainframe_djj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_zl.aspx.cs">
+      <DependentUpon>g_mainframe_zl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_zl.aspx.designer.cs">
+      <DependentUpon>g_mainframe_zl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_fswd2.aspx.cs">
+      <DependentUpon>g_mainframe_fswd2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_fswd2.aspx.designer.cs">
+      <DependentUpon>g_mainframe_fswd2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_txj.aspx.cs">
+      <DependentUpon>g_mainframe_txj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_txj.aspx.designer.cs">
+      <DependentUpon>g_mainframe_txj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ljer.aspx.cs">
+      <DependentUpon>g_mainframe_ljer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ljer.aspx.designer.cs">
+      <DependentUpon>g_mainframe_ljer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_lj2.aspx.cs">
+      <DependentUpon>g_left_nav_lj2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_lj2.aspx.designer.cs">
+      <DependentUpon>g_left_nav_lj2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sjsg.aspx.cs">
+      <DependentUpon>g_mainframe_sjsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sjsg.aspx.designer.cs">
+      <DependentUpon>g_mainframe_sjsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_sjsg.aspx.cs">
+      <DependentUpon>g_left_nav_sjsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_sjsg.aspx.designer.cs">
+      <DependentUpon>g_left_nav_sjsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_tzcq.aspx.cs">
+      <DependentUpon>g_mainframe_tzcq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_tzcq.aspx.designer.cs">
+      <DependentUpon>g_mainframe_tzcq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_tzcq.aspx.cs">
+      <DependentUpon>g_left_nav_tzcq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_tzcq.aspx.designer.cs">
+      <DependentUpon>g_left_nav_tzcq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_zsg.aspx.cs">
+      <DependentUpon>g_left_nav_zsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_zsg.aspx.designer.cs">
+      <DependentUpon>g_left_nav_zsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_zsg.aspx.cs">
+      <DependentUpon>g_mainframe_zsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_zsg.aspx.designer.cs">
+      <DependentUpon>g_mainframe_zsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_by.aspx.cs">
+      <DependentUpon>g_mainframe_by.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_by.aspx.designer.cs">
+      <DependentUpon>g_mainframe_by.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_nz.aspx.cs">
+      <DependentUpon>g_mainframe_nz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_nz.aspx.designer.cs">
+      <DependentUpon>g_mainframe_nz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_noreg.aspx.cs">
+      <DependentUpon>g_mainframe_noreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_noreg.aspx.designer.cs">
+      <DependentUpon>g_mainframe_noreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_left_nav_noreg.aspx.cs">
+      <DependentUpon>g_left_nav_noreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_left_nav_noreg.aspx.designer.cs">
+      <DependentUpon>g_left_nav_noreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_mxqy.aspx.cs">
+      <DependentUpon>g_mainframe_mxqy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_mxqy.aspx.designer.cs">
+      <DependentUpon>g_mainframe_mxqy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_swjt.aspx.cs">
+      <DependentUpon>g_mainframe_swjt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_swjt.aspx.designer.cs">
+      <DependentUpon>g_mainframe_swjt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_gcld.aspx.cs">
+      <DependentUpon>g_mainframe_gcld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_gcld.aspx.designer.cs">
+      <DependentUpon>g_mainframe_gcld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_jdsj.aspx.cs">
+      <DependentUpon>g_mainframe_jdsj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_jdsj.aspx.designer.cs">
+      <DependentUpon>g_mainframe_jdsj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_tjz.aspx.cs">
+      <DependentUpon>g_mainframe_tjz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_tjz.aspx.designer.cs">
+      <DependentUpon>g_mainframe_tjz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_khbd.aspx.cs">
+      <DependentUpon>g_mainframe_khbd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_khbd.aspx.designer.cs">
+      <DependentUpon>g_mainframe_khbd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sglj.aspx.cs">
+      <DependentUpon>g_mainframe_sglj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sglj.aspx.designer.cs">
+      <DependentUpon>g_mainframe_sglj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_hyjft.aspx.cs">
+      <DependentUpon>g_mainframe_hyjft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_hyjft.aspx.designer.cs">
+      <DependentUpon>g_mainframe_hyjft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_llsg.aspx.cs">
+      <DependentUpon>g_mainframe_llsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_llsg.aspx.designer.cs">
+      <DependentUpon>g_mainframe_llsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_nslm.aspx.cs">
+      <DependentUpon>g_mainframe_nslm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_nslm.aspx.designer.cs">
+      <DependentUpon>g_mainframe_nslm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_rxzt.aspx.cs">
+      <DependentUpon>g_mainframe_rxzt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_rxzt.aspx.designer.cs">
+      <DependentUpon>g_mainframe_rxzt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ftz.aspx.cs">
+      <DependentUpon>g_mainframe_ftz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ftz.aspx.designer.cs">
+      <DependentUpon>g_mainframe_ftz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ahxy.aspx.cs">
+      <DependentUpon>g_mainframe_ahxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ahxy.aspx.designer.cs">
+      <DependentUpon>g_mainframe_ahxy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_mhxy.aspx.cs">
+      <DependentUpon>g_mainframe_mhxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_mhxy.aspx.designer.cs">
+      <DependentUpon>g_mainframe_mhxy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sxj.aspx.cs">
+      <DependentUpon>g_mainframe_sxj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sxj.aspx.designer.cs">
+      <DependentUpon>g_mainframe_sxj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_zwj.aspx.cs">
+      <DependentUpon>g_mainframe_zwj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_zwj.aspx.designer.cs">
+      <DependentUpon>g_mainframe_zwj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_qxz.aspx.cs">
+      <DependentUpon>g_mainframe_qxz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_qxz.aspx.designer.cs">
+      <DependentUpon>g_mainframe_qxz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_qszg.aspx.cs">
+      <DependentUpon>g_mainframe_qszg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_qszg.aspx.designer.cs">
+      <DependentUpon>g_mainframe_qszg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_wwsg.aspx.cs">
+      <DependentUpon>g_mainframe_wwsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_wwsg.aspx.designer.cs">
+      <DependentUpon>g_mainframe_wwsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_dntg.aspx.cs">
+      <DependentUpon>g_mainframe_dntg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_dntg.aspx.designer.cs">
+      <DependentUpon>g_mainframe_dntg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_dtgzt.aspx.cs">
+      <DependentUpon>g_mainframe_dtgzt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_dtgzt.aspx.designer.cs">
+      <DependentUpon>g_mainframe_dtgzt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ahxx.aspx.cs">
+      <DependentUpon>g_mainframe_ahxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_ahxx.aspx.designer.cs">
+      <DependentUpon>g_mainframe_ahxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_jjp.aspx.cs">
+      <DependentUpon>g_mainframe_jjp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_jjp.aspx.designer.cs">
+      <DependentUpon>g_mainframe_jjp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sgyjz.aspx.cs">
+      <DependentUpon>g_mainframe_sgyjz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_sgyjz.aspx.designer.cs">
+      <DependentUpon>g_mainframe_sgyjz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame\g_mainframe_zwx.aspx.cs">
+      <DependentUpon>g_mainframe_zwx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame\g_mainframe_zwx.aspx.designer.cs">
+      <DependentUpon>g_mainframe_zwx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\byreg.aspx.cs">
+      <DependentUpon>byreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\byreg.aspx.designer.cs">
+      <DependentUpon>byreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\jy.aspx.cs">
+      <DependentUpon>jy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\jy.aspx.designer.cs">
+      <DependentUpon>jy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\jycl.aspx.cs">
+      <DependentUpon>jycl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\jycl.aspx.designer.cs">
+      <DependentUpon>jycl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\ktpdcl.aspx.cs">
+      <DependentUpon>ktpdcl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\ktpdcl.aspx.designer.cs">
+      <DependentUpon>ktpdcl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\ktpdlogin.aspx.cs">
+      <DependentUpon>ktpdlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\ktpdlogin.aspx.designer.cs">
+      <DependentUpon>ktpdlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\PlayGame.aspx.cs">
+      <DependentUpon>PlayGame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\PlayGame.aspx.designer.cs">
+      <DependentUpon>PlayGame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\sq2cl.aspx.cs">
+      <DependentUpon>sq2cl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\sq2cl.aspx.designer.cs">
+      <DependentUpon>sq2cl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\sssgcl.aspx.cs">
+      <DependentUpon>sssgcl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\sssgcl.aspx.designer.cs">
+      <DependentUpon>sssgcl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\ToGame.aspx.cs">
+      <DependentUpon>ToGame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\ToGame.aspx.designer.cs">
+      <DependentUpon>ToGame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\wan.aspx.cs">
+      <DependentUpon>wan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\wan.aspx.designer.cs">
+      <DependentUpon>wan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\sqcl.aspx.cs">
+      <DependentUpon>sqcl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\sqcl.aspx.designer.cs">
+      <DependentUpon>sqcl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\sjsgLogin.aspx.cs">
+      <DependentUpon>sjsgLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\sjsgLogin.aspx.designer.cs">
+      <DependentUpon>sjsgLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\sjsgcl.aspx.cs">
+      <DependentUpon>sjsgcl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\sjsgcl.aspx.designer.cs">
+      <DependentUpon>sjsgcl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\sjsg.aspx.cs">
+      <DependentUpon>sjsg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\sjsg.aspx.designer.cs">
+      <DependentUpon>sjsg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\nzLogin.aspx.cs">
+      <DependentUpon>nzLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\nzLogin.aspx.designer.cs">
+      <DependentUpon>nzLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\byLogin.aspx.cs">
+      <DependentUpon>byLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\byLogin.aspx.designer.cs">
+      <DependentUpon>byLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\by.aspx.cs">
+      <DependentUpon>by.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\by.aspx.designer.cs">
+      <DependentUpon>by.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\jdsjcl.aspx.cs">
+      <DependentUpon>jdsjcl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\jdsjcl.aspx.designer.cs">
+      <DependentUpon>jdsjcl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\nslm.aspx.cs">
+      <DependentUpon>nslm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\nslm.aspx.designer.cs">
+      <DependentUpon>nslm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\nslmcl.aspx.cs">
+      <DependentUpon>nslmcl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\nslmcl.aspx.designer.cs">
+      <DependentUpon>nslmcl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\sqserver.aspx.cs">
+      <DependentUpon>sqserver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\sqserver.aspx.designer.cs">
+      <DependentUpon>sqserver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\dntgcl.aspx.cs">
+      <DependentUpon>dntgcl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\dntgcl.aspx.designer.cs">
+      <DependentUpon>dntgcl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\dntg.aspx.cs">
+      <DependentUpon>dntg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\dntg.aspx.designer.cs">
+      <DependentUpon>dntg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCenter\MulitToGame.aspx.cs">
+      <DependentUpon>MulitToGame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GCenter\MulitToGame.aspx.designer.cs">
+      <DependentUpon>MulitToGame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Inc\SiteTop.aspx.cs">
+      <DependentUpon>SiteTop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inc\SiteTop.aspx.designer.cs">
+      <DependentUpon>SiteTop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inc\RightBottom.aspx.cs">
+      <DependentUpon>RightBottom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inc\RightBottom.aspx.designer.cs">
+      <DependentUpon>RightBottom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="infoshow.aspx.cs">
+      <DependentUpon>infoshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="infoshow.aspx.designer.cs">
+      <DependentUpon>infoshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageBase\GameLogin.aspx.cs">
+      <DependentUpon>GameLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageBase\GameLogin.aspx.designer.cs">
+      <DependentUpon>GameLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageBase\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\BankPay.ashx.cs">
+      <DependentUpon>BankPay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\DayPaySel.aspx.cs">
+      <DependentUpon>DayPaySel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\DayPaySel.aspx.designer.cs">
+      <DependentUpon>DayPaySel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayAli_Notify.aspx.cs">
+      <DependentUpon>PayAli_Notify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayAli_Notify.aspx.designer.cs">
+      <DependentUpon>PayAli_Notify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayAli_Return.aspx.cs">
+      <DependentUpon>PayAli_Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayAli_Return.aspx.designer.cs">
+      <DependentUpon>PayAli_Return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayGErr.aspx.cs">
+      <DependentUpon>PayGErr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayGErr.aspx.designer.cs">
+      <DependentUpon>PayGErr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayGSucc.aspx.cs">
+      <DependentUpon>PayGSucc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayGSucc.aspx.designer.cs">
+      <DependentUpon>PayGSucc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayPErr.aspx.cs">
+      <DependentUpon>PayPErr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayPErr.aspx.designer.cs">
+      <DependentUpon>PayPErr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayPSucc.aspx.cs">
+      <DependentUpon>PayPSucc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayPSucc.aspx.designer.cs">
+      <DependentUpon>PayPSucc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PaySzf_Notify.aspx.cs">
+      <DependentUpon>PaySzf_Notify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PaySzf_Notify.aspx.designer.cs">
+      <DependentUpon>PaySzf_Notify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PaySzf_Return.aspx.cs">
+      <DependentUpon>PaySzf_Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PaySzf_Return.aspx.designer.cs">
+      <DependentUpon>PaySzf_Return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PTPay.aspx.cs">
+      <DependentUpon>PTPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PTPay.aspx.designer.cs">
+      <DependentUpon>PTPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\QuickTenCallback.aspx.cs">
+      <DependentUpon>QuickTenCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\QuickTenCallback.aspx.designer.cs">
+      <DependentUpon>QuickTenCallback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\QuickPay.ashx.cs">
+      <DependentUpon>QuickPay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\TenCallBack.aspx.cs">
+      <DependentUpon>TenCallBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\TenCallBack.aspx.designer.cs">
+      <DependentUpon>TenCallBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\VCallBack.aspx.cs">
+      <DependentUpon>VCallBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\VCallBack.aspx.designer.cs">
+      <DependentUpon>VCallBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\YeeCallBack.aspx.cs">
+      <DependentUpon>YeeCallBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\YeeCallBack.aspx.designer.cs">
+      <DependentUpon>YeeCallBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\YPay.ashx.cs">
+      <DependentUpon>YPay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\QuickYeeCallback.aspx.cs">
+      <DependentUpon>QuickYeeCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\QuickYeeCallback.aspx.designer.cs">
+      <DependentUpon>QuickYeeCallback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\VRes.aspx.cs">
+      <DependentUpon>VRes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\VRes.aspx.designer.cs">
+      <DependentUpon>VRes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\QuickVCallback.aspx.cs">
+      <DependentUpon>QuickVCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\QuickVCallback.aspx.designer.cs">
+      <DependentUpon>QuickVCallback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayQdb_Notify.aspx.cs">
+      <DependentUpon>PayQdb_Notify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayQdb_Notify.aspx.designer.cs">
+      <DependentUpon>PayQdb_Notify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayQdb_Return.aspx.cs">
+      <DependentUpon>PayQdb_Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayQdb_Return.aspx.designer.cs">
+      <DependentUpon>PayQdb_Return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\QuickPayMulti.ashx.cs">
+      <DependentUpon>QuickPayMulti.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\BankPayMulti.ashx.cs">
+      <DependentUpon>BankPayMulti.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PTPayMulti.aspx.cs">
+      <DependentUpon>PTPayMulti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PTPayMulti.aspx.designer.cs">
+      <DependentUpon>PTPayMulti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="qq.ashx.cs">
+      <DependentUpon>qq.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Ajax.ashx.cs">
+      <DependentUpon>Ajax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Ajax.aspx.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Ajax.aspx.designer.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\CenterUserI.aspx.cs">
+      <DependentUpon>CenterUserI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\CenterUserI.aspx.designer.cs">
+      <DependentUpon>CenterUserI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\checkcode.ashx.cs">
+      <DependentUpon>checkcode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\gamesinfo.aspx.cs">
+      <DependentUpon>gamesinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\gamesinfo.aspx.designer.cs">
+      <DependentUpon>gamesinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\loginform.aspx.cs">
+      <DependentUpon>loginform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\loginform.aspx.designer.cs">
+      <DependentUpon>loginform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\NoRegAccountC.aspx.cs">
+      <DependentUpon>NoRegAccountC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\NoRegAccountC.aspx.designer.cs">
+      <DependentUpon>NoRegAccountC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\noreglogintwo.aspx.cs">
+      <DependentUpon>noreglogintwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\noreglogintwo.aspx.designer.cs">
+      <DependentUpon>noreglogintwo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\noregreg.aspx.cs">
+      <DependentUpon>noregreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\noregreg.aspx.designer.cs">
+      <DependentUpon>noregreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\qqCallBack.aspx.cs">
+      <DependentUpon>qqCallBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\qqCallBack.aspx.designer.cs">
+      <DependentUpon>qqCallBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\UnionLogin.aspx.cs">
+      <DependentUpon>UnionLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\UnionLogin.aspx.designer.cs">
+      <DependentUpon>UnionLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\userexit.aspx.cs">
+      <DependentUpon>userexit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\userexit.aspx.designer.cs">
+      <DependentUpon>userexit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\userlogin.aspx.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\userlogin.aspx.designer.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\userloginto.aspx.cs">
+      <DependentUpon>userloginto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\userloginto.aspx.designer.cs">
+      <DependentUpon>userloginto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\UserLoginW.aspx.cs">
+      <DependentUpon>UserLoginW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\UserLoginW.aspx.designer.cs">
+      <DependentUpon>UserLoginW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\pLogin.aspx.cs">
+      <DependentUpon>pLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\pLogin.aspx.designer.cs">
+      <DependentUpon>pLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\noreglogin.aspx.cs">
+      <DependentUpon>noreglogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\noreglogin.aspx.designer.cs">
+      <DependentUpon>noreglogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\noregloginone.aspx.cs">
+      <DependentUpon>noregloginone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\noregloginone.aspx.designer.cs">
+      <DependentUpon>noregloginone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\YRTPay.ashx.cs">
+      <DependentUpon>YRTPay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\MultiLogin.aspx.cs">
+      <DependentUpon>MultiLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\MultiLogin.aspx.designer.cs">
+      <DependentUpon>MultiLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\MultiExit.aspx.cs">
+      <DependentUpon>MultiExit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\MultiExit.aspx.designer.cs">
+      <DependentUpon>MultiExit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\MultiUserLoginTo.aspx.cs">
+      <DependentUpon>MultiUserLoginTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\MultiUserLoginTo.aspx.designer.cs">
+      <DependentUpon>MultiUserLoginTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\DIndulge.aspx.cs">
+      <DependentUpon>DIndulge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\DIndulge.aspx.designer.cs">
+      <DependentUpon>DIndulge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\EmailBind.aspx.cs">
+      <DependentUpon>EmailBind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\EmailBind.aspx.designer.cs">
+      <DependentUpon>EmailBind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\EmailModify.aspx.cs">
+      <DependentUpon>EmailModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\EmailModify.aspx.designer.cs">
+      <DependentUpon>EmailModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\hava7Reg.ashx.cs">
+      <DependentUpon>hava7Reg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\reg.aspx.cs">
+      <DependentUpon>reg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\reg.aspx.designer.cs">
+      <DependentUpon>reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\searchPass.aspx.cs">
+      <DependentUpon>searchPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\searchPass.aspx.designer.cs">
+      <DependentUpon>searchPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\updatePass.aspx.cs">
+      <DependentUpon>updatePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\updatePass.aspx.designer.cs">
+      <DependentUpon>updatePass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\UPWordM.aspx.cs">
+      <DependentUpon>UPWordM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\UPWordM.aspx.designer.cs">
+      <DependentUpon>UPWordM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\TransSel.aspx.cs">
+      <DependentUpon>TransSel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\TransSel.aspx.designer.cs">
+      <DependentUpon>TransSel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\UserReg.aspx.cs">
+      <DependentUpon>UserReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\UserReg.aspx.designer.cs">
+      <DependentUpon>UserReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\ServiceNoLogin.ashx.cs">
+      <DependentUpon>ServiceNoLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\UserService.aspx.cs">
+      <DependentUpon>UserService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\UserService.aspx.designer.cs">
+      <DependentUpon>UserService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\MultiUserMoreAdd.aspx.cs">
+      <DependentUpon>MultiUserMoreAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\MultiUserMoreAdd.aspx.designer.cs">
+      <DependentUpon>MultiUserMoreAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\MultiDIndulge.aspx.cs">
+      <DependentUpon>MultiDIndulge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\MultiDIndulge.aspx.designer.cs">
+      <DependentUpon>MultiDIndulge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\MultiUPWordM.aspx.cs">
+      <DependentUpon>MultiUPWordM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\MultiUPWordM.aspx.designer.cs">
+      <DependentUpon>MultiUPWordM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\MultiEmailBind.aspx.cs">
+      <DependentUpon>MultiEmailBind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\MultiEmailBind.aspx.designer.cs">
+      <DependentUpon>MultiEmailBind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCenter\MultiMMBH.aspx.cs">
+      <DependentUpon>MultiMMBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCenter\MultiMMBH.aspx.designer.cs">
+      <DependentUpon>MultiMMBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xsk\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xsk\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xsk\k.aspx.cs">
+      <DependentUpon>k.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xsk\k.aspx.designer.cs">
+      <DependentUpon>k.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bussiness\Bussiness.csproj">
+      <Project>{5BD185BB-0F1A-43CE-9C41-CDA9150C4F86}</Project>
+      <Name>Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{00DCD68C-7893-4D29-8B11-6E3B87DB9557}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEnity\DataEnity.csproj">
+      <Project>{150D9C34-1B28-4507-870A-5966F67AC7D0}</Project>
+      <Name>DataEnity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CenterData\NoGameIP.txt" />
+    <Content Include="Default.aspx" />
+    <Content Include="frame\g_left_nav_l.aspx" />
+    <Content Include="frame\g_mainframe_jy.aspx" />
+    <Content Include="frame\g_mainframe_ktpd.aspx" />
+    <Content Include="frame\g_mainframe_l.aspx" />
+    <Content Include="frame\g_mainframe_mhtj.aspx" />
+    <Content Include="frame\g_mainframe_sskc.aspx" />
+    <Content Include="frame\g_top_nav_l.aspx" />
+    <Content Include="frame\scroller.aspx" />
+    <Content Include="frame\g_mainframe_lj.aspx" />
+    <Content Include="frame\g_mainframe_yjxy.aspx" />
+    <Content Include="frame\g_left_nav_yjxy.aspx" />
+    <Content Include="frame\g_left_nav_tssg.aspx" />
+    <Content Include="frame\g_mainframe_tssg.aspx" />
+    <Content Include="frame\g_left_nav_mjcs.aspx" />
+    <Content Include="frame\g_mainframe_mjcs.aspx" />
+    <Content Include="frame\g_left_nav_sq.aspx" />
+    <Content Include="frame\g_mainframe_sq.aspx" />
+    <Content Include="frame\g_left_nav_hzw.aspx" />
+    <Content Include="frame\g_mainframe_hzw.aspx" />
+    <Content Include="frame\g_left_nav_xlfc.aspx" />
+    <Content Include="frame\g_mainframe_xlfc.aspx" />
+    <Content Include="frame\g_left_nav_dxz.aspx" />
+    <Content Include="frame\g_mainframe_dxz.aspx" />
+    <Content Include="frame\g_mainframe_djj.aspx" />
+    <Content Include="frame\g_mainframe_zl.aspx" />
+    <Content Include="frame\g_mainframe_fswd2.aspx" />
+    <Content Include="frame\g_mainframe_txj.aspx" />
+    <Content Include="frame\g_mainframe_ljer.aspx" />
+    <Content Include="frame\g_left_nav_lj2.aspx" />
+    <Content Include="frame\g_mainframe_sjsg.aspx" />
+    <Content Include="frame\g_left_nav_sjsg.aspx" />
+    <Content Include="frame\g_mainframe_tzcq.aspx" />
+    <Content Include="frame\g_left_nav_tzcq.aspx" />
+    <Content Include="frame\g_left_nav_zsg.aspx" />
+    <Content Include="frame\g_mainframe_zsg.aspx" />
+    <Content Include="frame\g_mainframe_by.aspx" />
+    <Content Include="frame\g_mainframe_nz.aspx" />
+    <Content Include="frame\g_mainframe_noreg.aspx" />
+    <Content Include="frame\g_left_nav_noreg.aspx" />
+    <Content Include="frame\g_mainframe_mxqy.aspx" />
+    <Content Include="frame\g_mainframe_swjt.aspx" />
+    <Content Include="frame\g_left_nav_gcld.html" />
+    <Content Include="frame\g_mainframe_gcld.aspx" />
+    <Content Include="frame\g_mainframe_jdsj.aspx" />
+    <Content Include="frame\g_mainframe_tjz.aspx" />
+    <Content Include="frame\g_mainframe_khbd.aspx" />
+    <Content Include="frame\g_mainframe_sglj.aspx" />
+    <Content Include="frame\g_mainframe_hyjft.aspx" />
+    <Content Include="frame\g_mainframe_llsg.aspx" />
+    <Content Include="frame\g_mainframe_nslm.aspx" />
+    <Content Include="frame\g_mainframe_rxzt.aspx" />
+    <Content Include="frame\g_mainframe_ftz.aspx" />
+    <Content Include="frame\g_mainframe_ahxy.aspx" />
+    <Content Include="frame\g_mainframe_mhxy.aspx" />
+    <Content Include="frame\g_mainframe_sxj.aspx" />
+    <Content Include="frame\g_mainframe_zwj.aspx" />
+    <Content Include="frame\g_mainframe_qxz.aspx" />
+    <Content Include="frame\g_mainframe_qszg.aspx" />
+    <Content Include="frame\g_mainframe_wwsg.aspx" />
+    <Content Include="frame\g_mainframe_dntg.aspx" />
+    <Content Include="frame\g_mainframe_dtgzt.aspx" />
+    <Content Include="frame\g_mainframe_ahxx.aspx" />
+    <Content Include="frame\g_mainframe_jjp.aspx" />
+    <Content Include="frame\g_mainframe_sgyjz.aspx" />
+    <Content Include="frame\g_mainframe_zwx.aspx" />
+    <Content Include="GCenter\byreg.aspx" />
+    <Content Include="GCenter\jy.aspx" />
+    <Content Include="GCenter\jycl.aspx" />
+    <Content Include="GCenter\jyc.html" />
+    <Content Include="GCenter\jyc1.html" />
+    <Content Include="GCenter\ktpdcl.aspx" />
+    <Content Include="GCenter\ktpdlogin.aspx" />
+    <Content Include="GCenter\nslmc.html" />
+    <Content Include="GCenter\sq2cl.aspx" />
+    <Content Include="GCenter\sqcl1.aspx" />
+    <Content Include="GCenter\sqloginnew.htm" />
+    <Content Include="GCenter\sssgLogin.aspx" />
+    <Content Include="GCenter\sssgcl.aspx" />
+    <Content Include="GCenter\sxdLogin.aspx" />
+    <Content Include="GCenter\ToGame.aspx" />
+    <Content Include="GCenter\wan.aspx" />
+    <Content Include="GCenter\sqcl.aspx" />
+    <Content Include="GCenter\sjsgLogin.aspx" />
+    <Content Include="GCenter\sjsgcl.aspx" />
+    <Content Include="GCenter\sjsg.aspx" />
+    <Content Include="GCenter\nzLogin.aspx" />
+    <Content Include="GCenter\byLogin.aspx" />
+    <Content Include="GCenter\by.aspx" />
+    <Content Include="GCenter\jdsjcl.aspx" />
+    <Content Include="GCenter\nslm.aspx" />
+    <Content Include="GCenter\nslmcl.aspx" />
+    <Content Include="GCenter\sq2loginnew.htm" />
+    <Content Include="GCenter\sqserver.aspx" />
+    <Content Include="GCenter\dntgc.html" />
+    <Content Include="GCenter\dntgcl.aspx" />
+    <Content Include="GCenter\dntg.aspx" />
+    <Content Include="GCenter\MulitToGame.aspx" />
+    <Content Include="getpage.aspx" />
+    <Content Include="Inc\jyGame.xml" />
+    <Content Include="Inc\login.htm" />
+    <Content Include="Inc\rightbottom.css" />
+    <Content Include="Inc\rightbottom.xml" />
+    <Content Include="Inc\SiteTop.aspx" />
+    <Content Include="Inc\RightBottom.aspx" />
+    <Content Include="Inc\RightBottom.htm" />
+    <Content Include="Inc\sqGame.xml" />
+    <Content Include="infoshow.aspx" />
+    <Content Include="JsFolder\bookmark.js" />
+    <Content Include="JsFolder\Code.js" />
+    <Content Include="JsFolder\jquery-1.9.0.min.js" />
+    <Content Include="JsFolder\jquery.tinyscrollbar.min.js" />
+    <Content Include="JsFolder\jycl.js" />
+    <Content Include="JsFolder\lj2cl.js" />
+    <Content Include="JsFolder\Login.js" />
+    <Content Include="JsFolder\PayDefault.js" />
+    <Content Include="JsFolder\PlayGame.js" />
+    <Content Include="JsFolder\road.js" />
+    <Content Include="JsFolder\Union.js" />
+    <Content Include="JsFolder\DayPaySel.js" />
+    <Content Include="JsFolder\sjsgcl.js" />
+    <Content Include="JsFolder\zsgcl.js" />
+    <Content Include="JsFolder\RightBottom.js" />
+    <Content Include="JsFolder\nzcl.js" />
+    <Content Include="JsFolder\jdsjcl.js" />
+    <Content Include="JsFolder\nslmcl.js" />
+    <Content Include="JsFolder\ahxycl.js" />
+    <Content Include="JsFolder\dntgcl.js" />
+    <Content Include="JsFolder\ktpdcl.js" />
+    <Content Include="JsFolder\ahxxcl.js" />
+    <Content Include="PageBase\GameLogin.aspx" />
+    <Content Include="Pay\DayPaySel.aspx" />
+    <Content Include="Pay\PaySzf_Notify.aspx" />
+    <Content Include="Pay\PaySzf_Return.aspx" />
+    <Content Include="Pay\PTPay.aspx" />
+    <Content Include="Pay\QuickTenCallback.aspx" />
+    <Content Include="Pay\TenCallBack.aspx" />
+    <Content Include="Pay\Top20DaySel.htm" />
+    <Content Include="Pay\VCallBack.aspx" />
+    <Content Include="Pay\YPay.ashx" />
+    <Content Include="Pay\BankPay.ashx" />
+    <Content Include="Pay\QuickPay.ashx" />
+    <Content Include="Pay\QuickPayMulti.ashx" />
+    <Content Include="Pay\BankPayMulti.ashx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UCenter\hava7Reg.ashx" />
+    <Content Include="Pay\PTPayMulti.aspx" />
+    <Content Include="Services\test.aspx" />
+    <Content Include="Services\MultiLogin.aspx" />
+    <Content Include="Services\MultiExit.aspx" />
+    <Content Include="Services\MultiUserLoginTo.aspx" />
+    <Content Include="UCenter\ServiceNoLogin.ashx" />
+    <Content Include="Services\YRTPay.ashx" />
+    <Content Include="qq.ashx" />
+    <Content Include="Services\loginform.aspx" />
+    <Content Include="Services\NoRegAccountC.aspx" />
+    <Content Include="Services\noreglogin.aspx" />
+    <Content Include="Services\noreglogintwo.aspx" />
+    <Content Include="Services\noregreg.aspx" />
+    <Content Include="Services\noregloginone.aspx" />
+    <Content Include="Services\qqCallBack.aspx" />
+    <Content Include="UCenter\UserService.aspx" />
+    <Content Include="UCenter\MultiUserMoreAdd.aspx" />
+    <Content Include="UCenter\MultiDIndulge.aspx" />
+    <Content Include="UCenter\MultiUPWordM.aspx" />
+    <Content Include="UCenter\MultiEmailBind.aspx" />
+    <Content Include="UCenter\MultiMMBH.aspx" />
+    <Content Include="xsk\xsk_llsg.html" />
+    <Content Include="xsk\xsk_zsg.html" />
+    <Content Include="Pay\PayQdb_Notify.aspx" />
+    <Content Include="Pay\PayQdb_Return.aspx" />
+    <Content Include="Services\gamesinfo.aspx" />
+    <Content Include="Services\pLogin.aspx" />
+    <Content Include="UCenter\UserReg.aspx" />
+    <Content Include="Pay\QuickVCallback.aspx" />
+    <Content Include="Pay\VRes.aspx" />
+    <Content Include="Services\userlogin.aspx" />
+    <Content Include="Services\userloginto.aspx" />
+    <Content Include="Inc\PageTopLink.htm" />
+    <Content Include="Pay\QuickYeeCallback.aspx" />
+    <Content Include="Services\checkcode.ashx" />
+    <Content Include="Services\Ajax.ashx" />
+    <Content Include="Inc\PageLeft.htm" />
+    <Content Include="JsFolder\Common.js" />
+    <Content Include="Pay\default.aspx" />
+    <Content Include="Services\Login.aspx" />
+    <Content Include="Services\UnionLogin.aspx" />
+    <Content Include="Services\userexit.aspx" />
+    <Content Include="UCenter\DIndulge.aspx" />
+    <Content Include="UCenter\EmailBind.aspx" />
+    <Content Include="UCenter\EmailModify.aspx" />
+    <Content Include="xsk\Default.aspx" />
+    <Content Include="usercookie.aspx" />
+    <Content Include="xsk\k.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2838</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

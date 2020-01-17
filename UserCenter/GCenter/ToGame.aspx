@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ToGame.aspx.cs" Inherits="UserCenter.GCenter.ToGame" %>

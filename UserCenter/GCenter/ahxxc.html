@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>暗黑修仙微端</title>
+    <link rel="stylesheet" href="http://file.dao50.com/ahxxcl/css/base.css"/>
+    <link rel="stylesheet" href="http://file.dao50.com/ahxxcl/css/index.css"/>
+    <script type="text/javascript" src="http://file.dao50.com/ahxxcl/js/jquery.js"></script>
+    <script type="text/javascript" src="http://file.dao50.com/ahxxcl/js/jquery.d.imagechange.min.js"></script>
+    <script type="text/javascript" src="http://file.dao50.com/ahxxcl/js/comman.js"></script>
+    <script type="text/javascript" src="http://file.dao50.com/ahxxcl/js/dd.js"></script>
+</head>
+<body>
+<div class="wrap index">
+    	<div class="top">
+            <div class="news-box">
+                <ul>
+                    <li><span class="sprite square"></span><a href="http://www.dao50.com/news/ahxx_yxgg/" target="_blank">《暗黑修仙》最新开服动态<i>[04/25]</i></a></li>
+                    <li><span class="sprite square"></span><a href="http://www.dao50.com/news/ahxx_yxhd/" target="_blank">《暗黑修仙》最新活动<i>[04/25]</i></a></li>
+                    <li><span class="sprite square"></span><a href="http://www.dao50.com/news/2014422/n530729740.html" target="_blank">《暗黑修仙》VIP介绍<i>[04/25]</i></a></li>
+                    <li><span class="sprite square"></span><a href="http://www.dao50.com/news/ahxx_yxgl/" target="_blank">《暗黑修仙》玩法攻略<i>[04/25]</i></a></li>
+                    <li><span class="sprite square"></span><a href="http://www.dao50.com/news/ahxx_yxzl/" target="_blank">《暗黑修仙》游戏资料<i>[04/25]</i></a></li>
+                </ul>
+            </div>
+            <div class="kaifu"><a href="http://www.dao50.com/news/ahxx_yxgg/" target="_blank"><img src="http://file.dao50.com/ahxxcl/img/ggt.jpg"/></a></div>
+       	</div>
+        <div class="clearfix">
+        	<dl class="game-info">
+            	<dt>游戏简介</dt>
+                <dd><a href="http://www.dao50.com/news/2014422/n223929741.html" target="_blank"><span class="sprite dot"></span>操作指南</a></dd>
+                <dd><a href="http://www.dao50.com/news/2014422/n580129735.html" target="_blank"><span class="sprite dot"></span>仙盟系统</a></dd>
+                <dd><a href="http://www.dao50.com/news/2014422/n343529736.html" target="_blank"><span class="sprite dot"></span>坐骑系统</a></dd>
+                <dd><a href="http://www.dao50.com/news/2014422/n322329737.html" target="_blank"><span class="sprite dot"></span>时装系统</a></dd>
+                <dd><a href="http://www.dao50.com/news/2014422/n881529738.html" target="_blank"><span class="sprite dot"></span>王城灵脉</a></dd>
+            </dl>
+        </div>
+        <div class="top-box">
+        	<div class="logo-link">
+            	<a href="http://www.dao50.com/" target="_blank"></a>
+            </div>
+            <div class="login-box tab">
+            	<form action="ahxxcl.aspx" method="post" onsubmit="return loginVal()" id="form1">
+                	<div class="clearfix inner-box">
+                        <div class="left">
+                            <div class="item">
+                                <label class="sprite username" for="username" >账号：</label>
+                                <input class="sprite text"  id="username" name="username" maxlength="16" type="text" /><!--账号-->
+                            </div>
+                            <div class="item">
+                                <label class="sprite pwd" for="pwd">密码：</label>
+                                <input class="sprite text" id="pwd" name="pwd" maxlength="16" type="password" /><!--密码-->
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <input value="" class="sprite button" type="submit"/><!--登录-->
+                        </div>
+                   	</div>
+                    <div class="others">
+                        <span><a href="http://www.dao50.com/yxzq/ahxx/" target="_blank">游戏首页</a></span>
+                        <a href="http://game.dao50.com/UCenter/searchPass.aspx" target="_blank" class="forget">忘记密码？</a>
+                        <a show="reg-box" class="reg-link" href="/UCenter/reg.aspx" target="_blank">注册帐号？</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("input").focus(function() {
+            $(this).parent().addClass("hover");
+        });
+        $("input").blur(function() {
+            $(this).parent().removeClass("hover");
+        });
+    });
+    $(function() {
+        $(".check-box").click(function() {
+            var ids = $("#" + $(this).attr("alts"));
+            if ($(this).hasClass("checked")) {
+                $(this).removeClass("checked");
+                ids.val("0");
+            } else {
+                $(this).addClass("checked");
+                ids.val("1");
+            }
+        })
+        $(".reg-box").hide();
+        $(".top-box").setTab({
+            btn: '.reg-link,.a-link'
+        });
+    })
+</script>
+<!--[if lt IE 7 ]>
+<script>
+    DD_belatedPNG.fix(".item label,.item .text,.button,.check-box,.dot,.square,background");
+</script>
+<![endif]-->
+<script type="text/javascript">
+    function loginVal() {
+        var username = $("#username").val();
+        var password = $("#pwd").val();
+        if (username == "" || username == "请输入用户名") {
+            alert("请输入用户名");
+            return false;
+        }
+        else if (password == "") {
+            alert("密码不能为空");
+            return false;
+        }
+        else if (username.length < 4 || username.length > 16) {
+            alert("用户名格式不正确!");
+            return false;
+        }
+        else if (password.length < 6 || password.length > 16) {
+            alert("密码格式不正确!");
+            return false;
+        }
+        else {
+            return true;
+        }
+    } 
+</script>
+</body>
+</html>
